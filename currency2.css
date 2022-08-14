@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito:wght@200;300;400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111b2b;
+    
+}
+.container{
+    width: 480px;
+    padding: 30px;
+    border-radius: 9px;
+    background: #2c3d57;
+    position: relative;
+    
+}
+h1{
+    color: aliceblue;
+    margin-left: 48px;
+    margin-bottom: 1.2rem;
+}
+.container .box{
+    width: 100%;
+    display: flex;
+}
+.box div{
+    width: 100%;
+}
+select{
+    width: 95%;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #2c3d57;
+    outline: none;
+    margin: 0.2rem 0;
+    padding: 0 1rem;
+    border-radius: 10px;
+    border: #7795af solid 2px;
+    color: aliceblue;
+}
+input{
+    width: 95%;
+    height: 40px;
+    font-size: 1rem;
+    margin: 0.85rem 0;
+    border-radius: 10px;
+    border: none;
+    background: #36b3b9;
+    outline: none;
+    padding: 0 1rem;
+    color: #000;
+}
+.btn{
+    width: 97.5%;
+    height: 40px;
+    background: #111b2b;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.owner a{
+    color: #36b3b9;
+    text-decoration: none;
+    
+}
+.owner{
+    transform: translate(100px, 155px);
+}
+/*================ Break Points ================*/
+
+@media (max-width: 600px){
+    .container{
+        max-width: 320px;
+        transform: translate(0px, 0px);
+    }
+    .owner{
+        transform: translate(11px, 150px);
+    }
+    h1{
+        margin-left: 4rem;
+    }
+}
+@media (max-width: 320px){
+    h1{
+        transform: translateX(-42px);
+    }
+    .container{
+        max-width: 272px;
+    }
+    .owner{
+        transform: translate(27px, 130px);
+    }
+}
